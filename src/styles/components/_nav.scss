@@ -1,0 +1,27 @@
+.nav{
+    position: fixed;
+    bottom: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.buttonsNav{
+    width: 80%;
+    max-width: 400px;
+    background-color: $tertiary-color;
+    border-radius: 3rem;
+    padding: 0.5rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    & .btn{
+        font-size: 1.1rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
+        transition: all .3s;
+        &:hover{
+            background: linear-gradient(90deg, $primary-color 15%, $secondary-color 95%);
+        }
+    }
+}

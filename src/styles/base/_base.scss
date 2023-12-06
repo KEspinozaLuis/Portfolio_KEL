@@ -1,0 +1,27 @@
+.btn{
+    font-family: $primary-font;
+    border: none;
+    padding: 0.5rem;
+    color: $white;
+    background-color: initial;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.btnPrimary{
+    padding: 0.8rem 1.5rem;
+    background: linear-gradient(90deg, $primary-color 15%, $secondary-color 90%);
+    border-radius: 1.5rem;
+    font-size: 0.8rem;
+}
+
+.wrapper{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+@include response(xl){
+    .wrapper{
+        max-width: 1100px;
+    }
+}

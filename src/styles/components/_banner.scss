@@ -1,0 +1,80 @@
+
+.containerInfo{
+    min-height: calc(100vh - 120px);
+    @include flex($direction: column);
+    color: $white;
+}
+.content{
+    font-family: $secondary-font;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.info{ 
+    text-transform: uppercase;
+}
+
+.name{
+    font-size: 2.8rem;
+}
+
+.role{
+    font-size: 1.5rem;
+}
+
+.description{
+    line-height: 1.4rem;
+}
+
+.buttons{
+    display: flex;
+    gap: 1.5rem;
+}
+.textProject{
+    color: $primary-color;
+}
+.social{
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    & a{ 
+        color: $white;
+        &:hover{
+            color: $primary-color;
+        }
+    }
+}
+
+.containerImg{
+    display: none;
+}
+
+@include response(lg){
+    .banner{
+        @include flex($justify: space-between);
+        padding-bottom: 3rem;
+    }
+    .content{
+        text-align: left;
+    }
+    .containerInfo{
+        align-items: initial;
+    }
+    .name{
+        font-size: 4rem;
+    }
+    .role{
+        font-size: 2rem;
+    }
+    .description{
+        max-width: 500px;
+    }
+    .containerImg{
+        display: block;
+        text-align: right;
+        & img{
+            width: 75%;
+        }
+    }
+}
