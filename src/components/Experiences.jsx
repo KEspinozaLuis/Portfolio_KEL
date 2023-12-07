@@ -1,7 +1,9 @@
 
 const Experiences = () => {
     return (
-        <h1>Experiencia</h1>
+        <section className="wrapper experiences section">
+            <h1 className="title">Experiencia & Estudio</h1>
+        </section>
     )
 }
 

@@ -1,19 +1,5 @@
-.banner{
-    min-height: 100vh;
-    @include flex($direction: column);
-    gap: 2rem;
-    color: $white;
-}
-.containerImg{
-    & img{
-        max-width: 10rem;
-    }
-}
-.containerInfo{
-    @include flex($direction: column);
-}
+
 .content{
-    font-family: $secondary-font;
     margin-bottom: 1.5rem;
     text-align: center;
 }
@@ -22,15 +8,8 @@
     text-transform: uppercase;
 }
 
-.name{
-    font-size: 2.6rem;
-}
-
 .role{
     font-size: 1.2rem;
-}
-.description{
-    max-width: 500px;
 }
 
 .buttons{
@@ -54,27 +33,13 @@
 }
 
 @include response(lg){
-    .banner{
-        @include flex($justify: space-between);
-        gap: 4rem
-    }
     .content{
         text-align: left;
     }
-    .containerInfo{
-        align-items: initial;
-    }
-    .name{
-        font-size: 4rem;
+    .banner .containerImg{
+        order: 2;
     }
     .role{
         font-size: 2rem;
-    }
-    .containerImg{
-        order: 2;
-        & img{
-            max-width: 100%;
-            width: 75%;
-        }
     }
 }

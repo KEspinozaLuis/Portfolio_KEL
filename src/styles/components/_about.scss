@@ -1,7 +1,26 @@
-.about{
-    color: $white;
+.about .containerInfo{
+    align-items: initial;
 }
-.description{
-    font-family: $secondary-font;
-    line-height: 1.4rem;
+.cv{
+    margin-top: 2rem;
+}
+
+.containerSkills{
+    margin-top: 2rem;
+}
+.titleSkill{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.skills{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    & li{
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 0.5rem;
+    }
 }

@@ -1,7 +1,9 @@
 
 const Projects = () => {
     return (
-        <h1>Proyectos</h1>
+        <section className="wrapper section">
+            <h1 className="title">Proyectos</h1>
+        </section>
     )
 }
 
