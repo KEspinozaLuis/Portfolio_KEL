@@ -11,17 +11,40 @@
     max-width: 400px;
     background-color: $tertiary-color;
     border-radius: 3rem;
-    padding: 0.5rem 1.5rem;
+    padding: 0.4rem 1.5rem;
     display: flex;
     justify-content: space-between;
     & .btn{
-        font-size: 1.1rem;
-        width: 2.5rem;
-        height: 2.5rem;
+        font-size: 1rem;
+        width: 2.2rem;
+        height: 2.2rem;
         border-radius: 50%;
         transition: all .3s;
         &:hover{
             background: linear-gradient(90deg, $primary-color 15%, $secondary-color 95%);
         }
+    }
+}
+
+
+@include response(lg){
+    .nav{
+        align-items: center;
+        width: fit-content;
+        min-height: 100vh;
+        right: 2rem;
+    }
+    .buttonsNav{
+        width: 100%;
+        height: fit-content;
+        flex-direction: column;
+        padding: 1.5rem 0.6rem;
+        gap: 1rem;
+    }
+}
+
+@include response(xl){
+    .nav{
+        right: 4rem;
     }
 }
