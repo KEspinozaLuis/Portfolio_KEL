@@ -32,7 +32,7 @@
     }
 }
 
-@include response(lg){
+@include mx-response(lg){
     .content{
         text-align: left;
     }

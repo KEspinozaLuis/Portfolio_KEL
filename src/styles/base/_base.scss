@@ -22,7 +22,7 @@
 }
 .section{
     min-height: 100vh;
-    @include flex($direction: column);
+    @include mx-flex($direction: column);
     gap: 2rem;
     padding: 3rem 0;
     color: $white;
@@ -40,10 +40,10 @@
     max-width: 10rem;      
 }
 .containerInfo{
-    @include flex($direction: column);
+    @include mx-flex($direction: column);
 }
 
-@include response(lg){
+@include mx-response(lg){
     .section{
         justify-content: space-between;
         flex-direction: row;
@@ -62,7 +62,7 @@
     }
 }
 
-@include response(xl){
+@include mx-response(xl){
     .wrapper{
         max-width: 1100px;
     }

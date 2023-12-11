@@ -27,7 +27,7 @@
 }
 
 
-@include response(lg){
+@include mx-response(lg){
     .nav{
         align-items: center;
         width: fit-content;
@@ -43,7 +43,7 @@
     }
 }
 
-@include response(xl){
+@include mx-response(xl){
     .nav{
         right: 4rem;
     }

@@ -6,7 +6,7 @@
   large desktop -->  ( 1200px - +)
 */
 
-@mixin response($breakpoint){
+@mixin mx-response($breakpoint){
     @if $breakpoint == sm {
         @media screen and (min-width: 640px){
             @content;
@@ -29,7 +29,7 @@
     }
 }
 
-@mixin flex($justify: center, $align: center, $direction: row){
+@mixin mx-flex($justify: center, $align: center, $direction: row){
     display: flex;
     justify-content: $justify;
     align-items: $align;
