@@ -28,7 +28,8 @@
     color: $white;
     font-family: $secondary-font;
 }
-.description{
+.description,
+.contactForm{
     max-width: 500px;
 }
 
@@ -64,6 +65,6 @@
 
 @include mx-response(xl){
     .wrapper{
-        max-width: 1100px;
+        max-width: 1000px;
     }
 }

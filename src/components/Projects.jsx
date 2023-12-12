@@ -15,7 +15,7 @@ const Projects = () => {
                     </div>
                 </div>
                 <div className="project">
-                    <img src="./projects/puraVidaViajes.png" alt="" />
+                    <img src="./projects/Pokedex.png" alt="" />
                     <div className="decriptionProject">
                         <h2>PokeApi</h2>
                         <div className="containerBtns">
@@ -25,7 +25,7 @@ const Projects = () => {
                     </div>
                 </div>
                 <div className="project">
-                    <img src="./projects/puraVidaViajes.png" alt="" />
+                    <img src="./projects/PIDogs.png" alt="" />
                     <div className="decriptionProject">
                         <h2>Dogs Api</h2>
                         <div className="containerBtns">
