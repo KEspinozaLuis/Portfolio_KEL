@@ -2,8 +2,11 @@ import { useState } from "react";
 import { 
     BsFillGeoAltFill, 
     BsFillEnvelopeFill, 
-    BsFillTelephoneFill 
+    BsFillTelephoneFill,
+    BsArrowRight 
 } from "react-icons/bs";
+
+import Button from "./Button";
 
 const Contact = () => {
 
@@ -22,7 +25,7 @@ const Contact = () => {
     }
 
     return (
-        <section className="wrapper section contact">
+        <section className="wrapper section contact" id="contact">
             <h1 className="title">Contacto</h1>
             <div className="contactInfo">
                 <div className="contentInfo">
@@ -64,7 +67,7 @@ const Contact = () => {
                         <textarea id="message" type="text" name="message" value={form.message} onChange={handleChange}/>
                         <label htmlFor="message" className={`${form.message && 'effectLabel'}`}>Mensaje</label>
                     </div>
-                    <button className="btn btnPrimary">Enviar</button>
+                    <Button label="Enviar" icon={<BsArrowRight/>}/>
             </form>
         </section>
     )

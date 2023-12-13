@@ -9,18 +9,18 @@ const Projects = () => {
                     <div className="decriptionProject">
                         <h2>Viajes Pura Vida</h2>
                         <div className="containerBtns">
-                            <button className="btn btnPrimary">Demo</button>
-                            <button className="btn btnPrimary">Github</button>
+                            <a href="https://client-puravidas-projects.vercel.app/" target="_blank" className="btn btnPrimary">Demo</a>
+                            <a href="https://github.com/KEspinozaLuis/PF_ViajesPuraVidaPremium" target="_blank" className="btn btnPrimary">Github</a>
                         </div>
                     </div>
                 </div>
                 <div className="project">
                     <img src="./projects/Pokedex.png" alt="" />
                     <div className="decriptionProject">
-                        <h2>PokeApi</h2>
+                        <h2>Pokedex</h2>
                         <div className="containerBtns">
-                            <button className="btn btnPrimary">Demo</button>
-                            <button className="btn btnPrimary">Github</button>
+                            <a href="" target="_blank" className="btn btnPrimary">Demo</a>
+                            <a href="https://github.com/KEspinozaLuis/Pokedex" target="_blank" className="btn btnPrimary">Github</a>
                         </div>
                     </div>
                 </div>
@@ -29,18 +29,18 @@ const Projects = () => {
                     <div className="decriptionProject">
                         <h2>Dogs Api</h2>
                         <div className="containerBtns">
-                            <button className="btn btnPrimary">Demo</button>
-                            <button className="btn btnPrimary">Github</button>
+                            <a href="" target="_blank" className="btn btnPrimary">Demo</a>
+                            <a href="https://github.com/KEspinozaLuis/PI_Dogs" target="_blank" className="btn btnPrimary">Github</a>
                         </div>
                     </div>
                 </div>
                 <div className="project">
                     <img src="./projects/puraVidaViajes.png" alt="Pura Vida Viajes Premium" />
                     <div className="decriptionProject">
-                        <h2>Viajes Pura Vida</h2>
+                        <h2>Esquina Verde</h2>
                         <div className="containerBtns">
-                            <button className="btn btnPrimary">Demo</button>
-                            <button className="btn btnPrimary">Github</button>
+                            <a href="" target="_blank" className="btn btnPrimary">Demo</a>
+                            <a href="" target="_blank" className="btn btnPrimary">Github</a>
                         </div>
                     </div>
                 </div>

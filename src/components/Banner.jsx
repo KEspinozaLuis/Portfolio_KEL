@@ -1,4 +1,10 @@
-import { BsFillEnvelopeFill, BsLinkedin, BsGithub } from "react-icons/bs";
+import { 
+    BsFillEnvelopeFill, 
+    BsLinkedin, 
+    BsGithub,
+    BsArrowRight } from "react-icons/bs";
+    
+import Button from "./Button";
 
 const Banner = () => {
     return (
@@ -14,14 +20,13 @@ const Banner = () => {
                 <div className="content description">
                     <p>Fuerte pasión por la creación de experiencias de usuario asombrosas combinando la creatividad del diseño con la lógica del código.</p>
                 </div>
-                <div className="content buttons">
-                    <button className="btn btnPrimary">Contacto</button>
-                    <button className="btn textProject">Proyectos</button>
+                <div className="content">
+                    <Button label="Sobre mí" icon={<BsArrowRight/>}/>
                 </div>
                 <div className="content social">
-                    <a href=""><BsFillEnvelopeFill /></a>
-                    <a href=""><BsLinkedin /></a>
-                    <a href=""><BsGithub /></a>
+                    <a href="mailto:kespinozaluis@gmail.com"><BsFillEnvelopeFill /></a>
+                    <a href="https://www.linkedin.com/in/keny-espinoza-luis-45b8b5193/" target="_blank"><BsLinkedin /></a>
+                    <a href="https://github.com/KEspinozaLuis/" target="_blank"><BsGithub /></a>
                 </div>
             </div>
         </section>

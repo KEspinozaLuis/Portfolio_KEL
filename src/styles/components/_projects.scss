@@ -40,6 +40,7 @@
 .containerBtns .btn{
    padding: 0.5rem 1rem;
    margin: 0 0.5rem;
+   line-height: 1.7rem;
 }
 
 @include mx-response(md){
