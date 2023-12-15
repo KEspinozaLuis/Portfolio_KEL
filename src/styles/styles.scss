@@ -1,0 +1,15 @@
+//Base
+@import './base/variables';
+@import './base/mixins';
+@import './base/reset';
+@import './base/base';
+
+//Componets
+@import './components/nav';
+@import './components/button';
+
+//view
+@import './views/banner';
+@import './views/about';
+@import './views/projects';
+@import './views/contact'

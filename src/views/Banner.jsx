@@ -1,10 +1,11 @@
+import { Link } from "react-router-dom";
 import { 
     BsFillEnvelopeFill, 
     BsLinkedin, 
     BsGithub,
     BsArrowRight } from "react-icons/bs";
     
-import Button from "./Button";
+import Button from "../components/Button";
 
 const Banner = () => {
     return (
@@ -21,7 +22,9 @@ const Banner = () => {
                     <p>Fuerte pasión por la creación de experiencias de usuario asombrosas combinando la creatividad del diseño con la lógica del código.</p>
                 </div>
                 <div className="content">
-                    <Button label="Sobre mí" icon={<BsArrowRight/>}/>
+                    <Link to="/about">
+                        <Button label="Sobre mí" icon={<BsArrowRight/>}/>
+                    </Link>
                 </div>
                 <div className="content social">
                     <a href="mailto:kespinozaluis@gmail.com"><BsFillEnvelopeFill /></a>

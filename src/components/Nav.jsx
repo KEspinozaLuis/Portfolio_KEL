@@ -1,20 +1,24 @@
+import { Link} from "react-router-dom";
 import { useState } from "react";
-import { 
-    BsFillHouseDoorFill,
-    BsPersonFill,
-    BsBriefcaseFill,
-    BsFillChatLeftTextFill
-} from "react-icons/bs";
+import { links } from "../utils/data";
 
-const Nav = ({scrollToSection}) => {
+const Nav = () => {
+    
+    const [active, setActive] = useState("/");
 
     return(
         <nav className="nav">
             <div className="buttonsNav">
-                <button className="btn active" onClick={() => scrollToSection('banner')}><BsFillHouseDoorFill/></button>
-                <button className="btn" onClick={() => scrollToSection('about')}><BsPersonFill/></button>
-                <button className="btn" onClick={() => scrollToSection('projects')}><BsBriefcaseFill/></button>
-                <button className="btn" onClick={() => scrollToSection('contact')}><BsFillChatLeftTextFill/></button>
+                {
+                    links.map( ({id, icon, path}) => (
+                        <Link 
+                            key={id} 
+                            className={`btn ${active === path ? 'active' : "" }`}
+                            to={path}
+                            onClick={() => setActive(path)}
+                        >{icon}</Link>
+                    ))
+                }
             </div>
         </nav>
     )

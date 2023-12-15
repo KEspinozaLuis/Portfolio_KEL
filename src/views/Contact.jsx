@@ -6,7 +6,7 @@ import {
     BsArrowRight 
 } from "react-icons/bs";
 
-import Button from "./Button";
+import Button from "../components/Button";
 
 const Contact = () => {
 

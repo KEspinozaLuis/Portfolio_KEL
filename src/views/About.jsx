@@ -1,17 +1,6 @@
-import { 
-    BiLogoReact,
-    BiLogoJavascript,
-    BiLogoRedux,
-    BiLogoHtml5,
-    BiLogoCss3,
-    BiLogoSass,
-    BiLogoBootstrap,
-    BiLogoTailwindCss,
-    BiLogoNodejs,
-    BiLogoGit
-} from "react-icons/bi";
 import { BsArrowDown } from "react-icons/bs";
-import Button from "./Button";
+import Button from "../components/Button";
+import { skills } from "../utils/data";
 
 const About = () => {
     return(
@@ -26,16 +15,11 @@ const About = () => {
                 <div className="containerSkills">
                     <h2 className="titleSkill">Habilidades</h2>
                     <ul className="skills">
-                        <li><BiLogoReact/> <p>React</p></li>
-                        <li><BiLogoJavascript/><p>JavaScript</p></li>
-                        <li><BiLogoRedux/><p>Redux</p></li>
-                        <li><BiLogoHtml5 /><p>Html</p></li>
-                        <li><BiLogoCss3/><p>Css</p></li>
-                        <li><BiLogoSass/><p>Sass</p></li>
-                        <li><BiLogoBootstrap/><p>Bootstrap</p></li>
-                        <li><BiLogoTailwindCss/><p>Tailwind</p></li>
-                        <li><BiLogoNodejs/><p>Node Js</p></li>
-                        <li><BiLogoGit/><p>Git</p></li>
+                        {
+                            skills.map( skill => (
+                                <li> {skill.icon} <p>{skill.tool}</p> </li>
+                            ))
+                        }
                     </ul>
                 </div>
             </div>

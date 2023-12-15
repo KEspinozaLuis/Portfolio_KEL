@@ -1,26 +1,23 @@
 import Nav from "./components/Nav";
-import Banner from "./components/Banner";
-import About from "./components/About";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
+import Banner from "./views/Banner";
+import About from "./views/About";
+import Experiences from "./views/Experiences";
+import Projects from "./views/Projects";
+import Contact from "./views/Contact";
+import { Routes, Route } from "react-router-dom";
 
 
 function App() {
-
-  const scrollToSection = (sectionId) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <>
-      <Nav scrollToSection={scrollToSection}/>
-      <Banner />
-      <About />
-      <Projects/>
-      <Contact/>
+      <Nav/>
+      <Routes>
+        <Route path="/" element={<Banner />}></Route>
+        <Route path="/about" element={<About />}></Route>
+        <Route path="/experiences" element={<Experiences />}></Route>
+        <Route path="/projects" element={<Projects/>}></Route>
+        <Route path="/contact" element={<Contact/>}></Route>
+      </Routes>
     </>
   )
 }
