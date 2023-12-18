@@ -1,10 +1,8 @@
-import { Link} from "react-router-dom";
-import { useState } from "react";
+import { Link, useLocation} from "react-router-dom";
 import { links } from "../utils/data";
 
 const Nav = () => {
-    
-    const [active, setActive] = useState("/");
+    const {pathname} = useLocation();
 
     return(
         <nav className="nav">
@@ -13,9 +11,8 @@ const Nav = () => {
                     links.map( ({id, icon, path}) => (
                         <Link 
                             key={id} 
-                            className={`btn ${active === path ? 'active' : "" }`}
+                            className={`btn ${pathname === path ? 'active' : "" }`}
                             to={path}
-                            onClick={() => setActive(path)}
                         >{icon}</Link>
                     ))
                 }
