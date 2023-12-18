@@ -1,3 +1,13 @@
+.containerExperiences .title{
+    animation: $topVertical;
+}
+
+.experiences{
+    animation: $leftHorizontal;;
+}
+.studies{
+    animation: $rigthHorizontal;
+}
 
 @include mx-response(lg){
     .containerExperiences{
