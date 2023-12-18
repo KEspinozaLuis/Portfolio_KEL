@@ -1,0 +1,45 @@
+
+.content{
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.info{ 
+    text-transform: uppercase;
+}
+
+.role{
+    font-size: 1.2rem;
+}
+
+.textProject{
+    color: $primary-color;
+}
+.social{
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    & a{ 
+        color: $white;
+        &:hover{
+            color: $primary-color;
+        }
+    }
+}
+
+.title{
+    color: $primary-color;
+}
+
+@include mx-response(lg){
+    .content{
+        text-align: left;
+    }
+    .banner .containerImg{
+        order: 2;
+    }
+    .role{
+        font-size: 2rem;
+    }
+}
