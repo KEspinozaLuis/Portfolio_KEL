@@ -1,7 +1,6 @@
 
 const ProjectItem = ({img, name, demo, repository}) => {
 
-    console.log(img, name, demo, repository)
   return (
     <div className="project">
         <img src={img} alt={name} />

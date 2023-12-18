@@ -17,7 +17,7 @@ const About = () => {
                     <ul className="skills">
                         {
                             skills.map( skill => (
-                                <li> {skill.icon} <p>{skill.tool}</p> </li>
+                                <li key={skill.id}> {skill.icon} <p>{skill.tool}</p> </li>
                             ))
                         }
                     </ul>

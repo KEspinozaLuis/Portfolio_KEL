@@ -7,9 +7,12 @@
 //Componets
 @import './components/nav';
 @import './components/button';
+@import './components/experienceItem';
+@import './components/projectItem';
 
 //view
 @import './views/banner';
 @import './views/about';
+@import './views/experience';
 @import './views/projects';
 @import './views/contact'
