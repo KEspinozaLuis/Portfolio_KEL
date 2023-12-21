@@ -17,9 +17,24 @@ body{
     width: 100%;
     font-size: 1rem;
     position: relative;
+
+    //Scroll
+    scrollbar-color: $gray $dark;
+    &::-webkit-scrollbar {
+        width: 0.75rem; 
+    }
+
+    &::-webkit-scrollbar-track {
+        background: $dark;
+        border-radius: 0.75rem;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: $gray;
+        border-radius: 0.75rem;
+        
+    }
 }
 
 img{
     width: 100%;
 }
-
