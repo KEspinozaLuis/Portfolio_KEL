@@ -39,7 +39,18 @@ textarea:focus + label,
 
 .contentInput{
     margin-bottom: 1.5rem;
+}
+
+.inputLabel{
     position: relative;
+}
+
+.messageError{
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    text-align: right;
+    color: $danger;
 }
 
 @include mx-response(lg){

@@ -53,4 +53,8 @@
     &:hover::before{
         transform: translateX(0);
     }
+
+    &[disabled]{
+        cursor: not-allowed;
+    }
 }

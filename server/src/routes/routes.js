@@ -1,8 +1,7 @@
 const {Router} = require('express');
 const routes = Router();
+const handlerContacto = require('../handlers/handlerContacto.js');
 
-routes.use ('/sendEmail', (req, res) => {
-    res.status(200).send('Enviado')
-})
+routes.post ('/sendEmail', handlerContacto);
 
 module.exports = routes;
