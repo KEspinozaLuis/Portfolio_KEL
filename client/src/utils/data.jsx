@@ -74,7 +74,7 @@ export const projects = [
         id: 3,
         name: "Pokedex",
         img: './projects/Pokedex.png',
-        demo: '',
+        demo: 'https://pokedex-kel.vercel.app/',
         repository: 'https://github.com/KEspinozaLuis/Pokedex'
     },
     {
