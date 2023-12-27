@@ -9,7 +9,13 @@
 }
 
 .role{
+    display: block;
     font-size: 1.2rem;
+    border-right: 3px solid;
+    width: 18ch;
+    white-space: nowrap;
+    animation: typing 2s steps(18), blink .5s infinite step-end alternate;
+    overflow: hidden;
 }
 
 .textProject{
@@ -41,5 +47,17 @@
     }
     .role{
         font-size: 2rem;
+    }
+}
+
+@keyframes typing {
+    0%{
+        width: 0;
+    }
+}
+
+@keyframes blink{
+    50%{
+        border-color: transparent;
     }
 }

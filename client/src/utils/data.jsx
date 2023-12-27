@@ -67,7 +67,7 @@ export const projects = [
         id: 2,
         name: "PI Dogs",
         img: './projects/PIDogs.png',
-        demo: '',
+        demo: 'https://pi-dogs-kel.vercel.app/',
         repository: 'https://github.com/KEspinozaLuis/PI_Dogs'
     },
     {
