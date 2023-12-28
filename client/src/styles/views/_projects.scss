@@ -1,0 +1,22 @@
+.projects{
+    flex-direction: column;
+    .title{
+        animation: $topVertical;
+    }
+}
+.containerProjects{
+    display: grid;
+    gap: 2rem;
+    animation: $bottomVertical;
+}
+
+@include mx-response(md){
+    .projects{
+        justify-content: center;
+    }
+    .containerProjects{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+

@@ -1,0 +1,56 @@
+.wrapper{
+    max-width: 90%;
+    margin: 0 auto;
+}
+.section{
+    min-height: 100vh;
+    @include mx-flex($direction: column);
+    gap: 2rem;
+    padding: 3rem 0;
+    color: $white;
+    font-family: $secondary-font;
+}
+.description,
+.contactForm{
+    max-width: 500px;
+}
+
+.title{
+    font-size: 2.6rem;
+}
+
+.containerImg{
+    animation: $rigthHorizontal;
+    img{
+        max-width: 10rem;      
+    }
+} 
+.containerInfo{
+    @include mx-flex($direction: column);
+    animation: $leftHorizontal;
+}
+
+@include mx-response(lg){
+    .section{
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 4rem
+    }
+    .title{
+        font-size: 4rem;
+    }
+    .containerInfo{
+        align-items: initial;
+    }
+    
+    .containerImg img{
+        max-width: 100%;
+        width: 20rem;
+    }
+}
+
+@include mx-response(xl){
+    .wrapper{
+        max-width: 1000px;
+    }
+}

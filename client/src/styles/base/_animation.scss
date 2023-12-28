@@ -1,0 +1,36 @@
+
+@keyframes leftHorizontal {
+    0%{
+        transform: translateX(-20%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes rigthHorizontal {
+    0%{
+        transform: translateX(20%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes topVertical {
+    0%{
+        transform: translateY(-20%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes bottomVertical {
+    0%{
+        transform: translateY(20%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}

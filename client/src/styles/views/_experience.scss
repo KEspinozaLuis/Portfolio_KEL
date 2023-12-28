@@ -1,0 +1,22 @@
+.containerExperiences .title{
+    animation: $topVertical;
+}
+
+.experiences{
+    animation: $leftHorizontal;;
+}
+.studies{
+    animation: $rigthHorizontal;
+}
+
+@include mx-response(lg){
+    .containerExperiences{
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    .experiences,
+    .studies{
+        width: calc(50% - 4rem);
+    }
+}
