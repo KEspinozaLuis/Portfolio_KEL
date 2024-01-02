@@ -11,6 +11,8 @@ import validate from '../utils/validate';
 import axios from 'axios';
 import { modalSuccess, modalError } from "../utils/modal";
 
+const URL_API = import.meta.env.VITE_BASE_URL;
+
 const Contact = () => {
 
     const [form, setForm] = useState({
@@ -51,7 +53,7 @@ const Contact = () => {
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
-            await axios.post("http://localhost:3001/sendEmail", form);
+            await axios.post(`${URL_API}/sendEmail}`, form);
             modalSuccess();
         } catch (error) {
             modalError();
