@@ -80,7 +80,7 @@ export const projects = [
     {
         id: 4,
         name: "Esquina Verde",
-        img: './projects/puraVidaViajes.png',
+        img: './projects/EsquinaVerde.png',
         demo: '',
         repository: 'https://github.com/KEspinozaLuis/PF_ViajesPuraVidaPremium'
     }

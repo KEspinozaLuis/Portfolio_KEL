@@ -7,8 +7,8 @@ const ProjectItem = ({img, name, demo, repository}) => {
         <div className="decriptionProject">
             <h2>{name}</h2>
             <div className="containerBtns">
-                <a href={demo} target="_blank" className="btn btnPrimary"> Demo </a>
-                <a href={repository} target="_blank" className="btn btnPrimary">Github</a>
+                {demo !== "" && <a href={demo} target="_blank" className="btn btnPrimary"> Demo </a>}
+                {repository !== "" && <a href={repository} target="_blank" className="btn btnPrimary">Github</a>}
             </div>
         </div>
     </div>
