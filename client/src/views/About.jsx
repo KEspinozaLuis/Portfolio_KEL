@@ -10,7 +10,7 @@ const About = () => {
             <div className="containerInfo">
                 <h1 className="title">Sobre mí</h1>
                 <p className="description"> Front end developer con una fuerte pasión por la creación de experiencias de usuario asombrosas, donde combino la creatividad del diseño con la lógica del código para dar vida a sitios web y aplicaciones atractivas. <br />Mi objetivo es contribuir a la creación de experiencias que no solo funcionen bien, sino que también sorprendan y deleiten a los usuarios.</p>
-                <a className="btn btnPrimary" href="https://drive.google.com/file/d/1hW30r_hgVrJyD3Va6m1yfMj2qIQRS44N/view?usp=drive_link" download="CV-KenyEspinoza">
+                <a className="btn btnPrimary" href="https://drive.google.com/file/d/1tvoV2KVG2XSaSAXGLKGt-KrYb2Pt0vfr/view?usp=drive_link" download="CV-KenyEspinoza">
                     Descargar CV
                     <span className="icon"><BsArrowDown /></span>
                 </a>
