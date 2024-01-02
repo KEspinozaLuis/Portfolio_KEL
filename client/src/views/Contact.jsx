@@ -53,8 +53,14 @@ const Contact = () => {
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
-            await axios.post(`${URL_API}/sendEmail}`, form);
+            await axios.post(`${URL_API}/sendEmail`, form);
             modalSuccess();
+            setForm({
+                name: "",
+                email: "",
+                subject: "",
+                message: ""
+            })
         } catch (error) {
             modalError();
         }
