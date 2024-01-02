@@ -3,7 +3,7 @@ const transporter = require('../../config/nodemailer');
 const controllerContacto = async(name, email, subject, message) => {
     await transporter.sendMail({
         from: email,
-        to: "elka23388@gmail.com",
+        to: "kespinozaluis@gmail.com",
         subject: subject,
         html: `
         <div style="background-color: #2b292b; padding-top: 2rem; text-align: center;">

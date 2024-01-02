@@ -2,6 +2,7 @@
 const controllerContacto = require('../controllers/controllerContacto');
 
 const handlerContacto = (req, res) => {
+    console.log(req.body)
     const {name, email, subject, message} = req.body;
     try {
         controllerContacto(name, email, subject, message);

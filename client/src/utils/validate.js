@@ -1,6 +1,5 @@
 
 const validate = (form, property, errors, setErrors) => {
-    console.log("form-validate",form);
     //Expresiones regulares
     const regexLetters=/^[a-zA-Z ]+$/;
     const regexEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{3}$/;
