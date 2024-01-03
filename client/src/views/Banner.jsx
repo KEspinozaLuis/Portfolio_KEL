@@ -11,7 +11,7 @@ const Banner = () => {
     return (
         <section className="wrapper banner section" id="banner">
             <div className="containerImg">
-                <img src="./img/photo.png" alt="foto perfil" />
+                <img src="./img/photo.webp" alt="foto perfil" />
             </div>
             <div className="containerInfo">
                 <div className="content info">
