@@ -5,7 +5,7 @@ const About = () => {
     return(
         <section className="wrapper about section" id="about">
             <div className="containerImg">
-                <img src="./img/photo-about.png" alt="foto perfil" />
+                <img src="./img/photo-about.webp" alt="foto perfil" />
             </div>
             <div className="containerInfo">
                 <h1 className="title">Sobre mí</h1>
