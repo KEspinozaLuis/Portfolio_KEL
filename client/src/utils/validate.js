@@ -19,7 +19,7 @@ const validate = (form, property, errors, setErrors) => {
         else setErrors({...errors, subject: ""});
     }
     if(property === "message"){
-        if(form.name === "") setErrors({...errors, message: "Campo requerido"});
+        if(form.message === "") setErrors({...errors, message: "Campo requerido"});
         else setErrors({...errors, message: ""})
     }
 }
