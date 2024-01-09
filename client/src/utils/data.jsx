@@ -56,29 +56,36 @@ export const links = [
   ];
 
 export const projects = [
-    {
+      {
         id: 1,
+        name: "Búhos Nocturnos",
+        img: './projects/nocturne-owls.webp',
+        demo: 'https://www.nocturneowls.tech/',
+        repository: 'https://github.com/Nocturnes-Owls'
+    },
+    {
+        id: 2,
         name: "Pura Vida Viajes",
         img: './projects/puraVidaViajes.webp',
         demo: 'https://client-puravidas-projects.vercel.app/',
         repository: 'https://github.com/KEspinozaLuis/PF_ViajesPuraVidaPremium'
     },
     {
-        id: 2,
+        id: 3,
         name: "PI Dogs",
         img: './projects/PIDogs.webp',
         demo: 'https://pi-dogs-kel.vercel.app/',
         repository: 'https://github.com/KEspinozaLuis/PI_Dogs'
     },
     {
-        id: 3,
+        id: 4,
         name: "Pokedex",
         img: './projects/Pokedex.webp',
         demo: 'https://pokedex-kel.vercel.app/',
         repository: 'https://github.com/KEspinozaLuis/Pokedex'
     },
     {
-        id: 4,
+        id: 5,
         name: "Esquina Verde",
         img: './projects/EsquinaVerde.webp',
         demo: '',

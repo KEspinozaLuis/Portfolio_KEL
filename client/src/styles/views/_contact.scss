@@ -1,5 +1,5 @@
 .contact .title{
-    animation: $topVertical;
+    animation: $fade-in-top;
 }
 .contactInfo{
     display: none;
@@ -32,7 +32,7 @@ textarea:focus + label,
 
 .contactForm{
     width: 100%;
-    animation: $rigthHorizontal;
+    animation: $fade-in-right;
     h2 {
         font-size: 2rem;
     }
@@ -64,7 +64,7 @@ textarea:focus + label,
     }
     .contactInfo{
         display: block;
-        animation: $leftHorizontal;
+        animation: $fade-in-left;
     }
     .contentInfo{
         margin-bottom: 1.5rem;

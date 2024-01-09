@@ -1,5 +1,14 @@
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
 
-@keyframes leftHorizontal {
+@keyframes fade-in-left {
     0%{
         transform: translateX(-20%);
     }
@@ -8,7 +17,7 @@
     }
 }
 
-@keyframes rigthHorizontal {
+@keyframes fade-in-right {
     0%{
         transform: translateX(20%);
     }
@@ -17,7 +26,7 @@
     }
 }
 
-@keyframes topVertical {
+@keyframes fade-in-top {
     0%{
         transform: translateY(-20%);
     }
@@ -26,7 +35,7 @@
     }
 }
 
-@keyframes bottomVertical {
+@keyframes fade-in-bottom {
     0%{
         transform: translateY(20%);
     }

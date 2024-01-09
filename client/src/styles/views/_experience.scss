@@ -1,12 +1,12 @@
 .containerExperiences .title{
-    animation: $topVertical;
+    animation: $fade-in-top;
 }
 
 .experiences{
-    animation: $leftHorizontal;;
+    animation: $fade-in-left;
 }
 .studies{
-    animation: $rigthHorizontal;
+    animation: $fade-in-right;
 }
 
 @include mx-response(lg){
