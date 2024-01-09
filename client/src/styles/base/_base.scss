@@ -20,14 +20,14 @@
 }
 
 .containerImg{
-    animation: $rigthHorizontal;
+    animation: $fade-in-right;
     img{
         max-width: 10rem;      
     }
 } 
 .containerInfo{
     @include mx-flex($direction: column);
-    animation: $leftHorizontal;
+    animation: $fade-in-left;
 }
 
 @include mx-response(lg){
